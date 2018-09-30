@@ -6,3 +6,5 @@ while [ $x=1 ]
 do
 echo "amaze[@]
 done
+
+echo "welcome devops"
