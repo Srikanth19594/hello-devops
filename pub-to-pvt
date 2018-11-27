@@ -1,4 +1,4 @@
---- How to move "from public-server" to "private-servers" without key---
+--- How to connect "from public-server" to "private-servers" without key---
  for example we have "one" public-server "three" pvt-ser's
  first we need to copy the private-key(.pem file) into public-server through 
  winscp and give the permissions to that private-key(.pem file) as 600 means 
