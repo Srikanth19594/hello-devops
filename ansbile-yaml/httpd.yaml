@@ -1,6 +1,6 @@
 ---
 - hosts: web
-  become:yes
+  become: yes
   tasks:
   - name: installing HTTPD
     yum: name=httpd state=present
