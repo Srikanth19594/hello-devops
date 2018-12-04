@@ -17,34 +17,38 @@ create ssh key like following command
 [root@172.31.40.255 ~]#sudo yum -y install ansible; ansible --version
 create user ansible and give root privillages and add all private hosts in /etc/hosts and 
 give hostnames in /etc/sysconfig/network
+
 for ex:vi /etc/hosts
-	   172.31.0.140   pvt1
-	   172.31.91.104  pvt2
-	   172.31.59.108  pvt3
-	   172.31.40.255  ansible-server
-   :wq!
+172.31.0.140   pvt1
+172.31.91.104  pvt2
+172.31.59.108  pvt3
+172.31.40.255  ansible-server
+
+
 for ex:vi /etc/sysconfig/network
-	HOSTNAME=pvt1
-	HOSTNAME=pvt2
-	HOSTNAME=pvt3
-	HOSTNAME=ansible-server 	 
-   :wq!
+HOSTNAME=pvt1
+HOSTNAME=pvt2
+HOSTNAME=pvt3
+HOSTNAME=ansible-server 	 
+
+
 [root@172.31.40.255 ~]#sudo hostname ansible-server	 
 [root@172.31.40.255 ~]#sudo su ansible
 [ansible@ansbile-server ~]# sudo chown -R ansible:ansible /etc/ansible
 [ansible@ansbile-server ~]# vi ansible.cfg
+
 [defaults]
 hostfile=inventory
 remote_user=ansible
 become_user=root
 become=yes
 host_key_checking=false 
- :wq!
+
 [ansible@ansbile-server ~]#vi inventory
 [web]
 pvt1
 pvt2
 [app]
 pvt3
-:wq!
+
 NOTE: all files and directories ownership as "ansible" user  
