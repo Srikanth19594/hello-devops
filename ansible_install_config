@@ -33,18 +33,18 @@ for ex:vi /etc/sysconfig/network
 [root@172.31.40.255 ~]#sudo su ansible
 [ansible@ansbile-server ~]# sudo chown -R ansible:ansible /etc/ansible
 [ansible@ansbile-server ~]# vi ansible.cfg
-	[defaults]
-	hostfile=inventory
-	remote_user=ansible
-	become_user=root
-	become=yes
-	host_key_checking=false 
-  :wq!
+[defaults]
+hostfile=inventory
+remote_user=ansible
+become_user=root
+become=yes
+host_key_checking=false 
+ :wq!
 [ansible@ansbile-server ~]#vi inventory
-	   [web]
-           pvt1
-	   pvt2
-	   [app]
-	   pvt3
-	:wq!
+[web]
+pvt1
+pvt2
+[app]
+pvt3
+:wq!
 NOTE: all files and directories ownership as "ansible" user  
