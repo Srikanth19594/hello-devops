@@ -20,6 +20,6 @@
 tcp 0   0 0.0.0.0:8081  0.0.0.0:*    LISTEN      13120/java
 
 then hit on browser like
-ipaddress:8081/nexu
+ipaddress:8081/nexus
 
 
