@@ -2,7 +2,8 @@
 	 create a nexus user 
 	 useradd nexus
 	 cd /opt
-1.wget http://download.sonatype.com/nexus/oss/nexus-2.11.2-06-bundle.tar.gz	2.sudo tar -xvf nexus-2.11.2-06-bundle.tar.gz
+1.wget http://download.sonatype.com/nexus/oss/nexus-2.11.2-06-bundle.tar.gz	
+2.sudo tar -xvf nexus-2.11.2-06-bundle.tar.gz
 3.cp nexus-2.11.2-06 /etc/init.d/nexus
 4.sudo chown root /etc/init.d/nexus
 5.sudo chmod 755 /etc/init.d/nexus
