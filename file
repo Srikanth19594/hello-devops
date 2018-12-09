@@ -7,7 +7,7 @@
 4.sudo chown root /etc/init.d/nexus
 5.sudo chmod 755 /etc/init.d/nexus
 6.vi /etc/init.d/nexus
-   JAVA_HOME=/opt/jdk1.8.0_191
+   NEXUS_HOME=/opt/nexus-2.11.2-06
    RUN_AS_USER=nexus
 7.chown -R nexus:nexus nexus-2.11.2-06
 8.chown -R nexus:nexus Sonatype-work
