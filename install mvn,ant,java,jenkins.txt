@@ -112,7 +112,32 @@ export PATH=${M2_HOME}/bin:${PATH}
  <role rolename="manager-script"/>
  <user username="tomcat" password="tomcat" roles="manager-gui,manager-script"/>
    
+	---------------GRADLE--------------
+ 1. cd /opt
+ 2. sudo wget https://services.gradle.org/distributions/gradle-3.4.1-bin.zip
+ 3. sudo mkdir /opt/gradle
+ 4. sudo unzip -d /opt/gradle gradle-3.4.1-bin.zip
+ 5. sudo vi /etc/profile.d/gradle.sh
+    export PATH=$PATH:/opt/gradle/gradle-3.4.1/bin
+    :wq!
+ 6. gradle -v
+ 
+    You should see the following output.
 
+------------------------------------------------------------
+Gradle 3.4.1
+------------------------------------------------------------
+
+Build time:   2017-03-03 19:45:41 UTC
+Revision:     9eb76efdd3d034dc506c719dac2955efb5ff9a93
+
+Groovy:       2.4.7
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_121 (Oracle Corporation 25.121-b13)
+OS:           Linux 3.10.0-514.10.2.el7.x86_64 amd64
+	
+	
+	
      ------------------nexus---------------
    1. wget http://download.sonatype.com/nexus/oss/nexus-2.11.2-06-bundle.tar.gz 
 
