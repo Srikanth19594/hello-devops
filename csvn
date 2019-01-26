@@ -21,8 +21,17 @@ uncomment the JAVA_HOME="give path of java"
 uncomment the RUN_AS_USER=svn(creating username)
 11. cd /opt/csvn/bin
 12. ./csvn start (start with svn user)
-13. check status
-ex: ./csvn status
+
+Starting CSVN Console...
+...
+CSVN Console started
+Waiting for application to initialize (this may take a minute)...................................
+CSVN Console is ready at http://localhost:3343/csvn
+
+13. ./csvn status
+
+CSVN Console is running: PID:18066, Wrapper:STARTED, Java:STARTED
+
 14. netstat -tnlp
 tcp6       0      0 :::3343                 :::*                    LISTEN      17245/java
 
