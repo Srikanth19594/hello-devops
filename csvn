@@ -6,7 +6,8 @@ and give root privillages to svn
 ex: visudo
 svn ALL=(ALL) NOPASSWD: ALL
 2. cd /opt
-3.sudo wget https://www.collab.net/system/files/CollabNetSubversionEdge-5.2.3_linux-x86_64.tar.gz
+3.sudo wget https://www.collab.net/system/files/CollabNetSubversionEdge-5.2.3_linux-x86_64.tar.gz(if link is not work you can download
+from browser and copy CollabNetSubversionEdge-5.2.3_linux-x86_64.tar.gz from winscp and untar)
 4. ls
 CollabNetSubversionEdge-5.2.3_linux-x86_64.tar.gz
 5. tar -xvf CollabNetSubversionEdge-5.2.3_linux-x86_64.tar.gz
