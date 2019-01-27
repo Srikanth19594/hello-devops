@@ -9,18 +9,20 @@
 7. cd repository
 8. cd trunk
     create one file in trunk and save
-9. cd..
+9. cd trunk
 10. svn add filename
 11. svn commit -m "message"
   open visualSVN and copy the trunk-url 
-12. svn copy trunk-url branches/b_1.0
+12. cd ..
+13. svn copy trunk-url branches/b_1.0
   do modifications if needed in file
-13. svn commit -m "message"
-14. cd trunk
+14. svn commit -m "message"
+15. svn update
+16. cd trunk
     open visulaSVN and copy the b_1.0-url
-15. svn merge b_1.0-url trunk
-16. svn update
-17. svn commit -m "message"
+17. svn merge b_1.0-url trunk
+18. svn update
+19. svn commit -m "message"
 
           ---------git-process----------
 1. install gitbash in windows
