@@ -42,6 +42,6 @@
 12. git config --global user.name "your name"
 13. git config --global user.email "your github mail"
 14. git push 
-   here display on github popup window in that enter your github credentials
+   Here visible github popup window in that enter your github credentials(if new user)
 15. git push -u origin master   
 	
