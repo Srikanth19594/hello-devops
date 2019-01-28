@@ -27,6 +27,7 @@ ex: 172.31.0.0/16 pcx-0d98034e28a143653   active
    Destination    Target                status
 ex: 10.16.0.0/26 pcx-0d98034e28a143653   active
 
+7. give allow access in security-grop
 --Now check the peering connection using both different network machines--
 
 [devops@ip-172-31-77-158 ~]$ ping 10.16.0.4
