@@ -14,14 +14,14 @@
     kranthi ALL=(ALL)  NOPASSWD: ALL
     :wq!
  6. sudo vi /etc/hosts
-     here give three pvt-ser ip-adddresses and names and save it
+     here i gave three pvt-ser ip-adddresses and hostnames and saved
      ex: 172.31.4.112 pvt-ser1
          172.31.89.9  pvt-ser2
 	 172.31.23.215 pvt-ser3
 	 172.31.16.180 pub-ser
 	 :wq!
  7. sudo vi /etc/sysconfig/network
-    Here give there private servers hostnames as it as hosts names
+    Here i gave there private servers hostnames and saved
     ex: HOSTNAME=pvt-ser1
         HOSTNAME=pvt-ser2
 	HOSTNAME=pvt-ser3
