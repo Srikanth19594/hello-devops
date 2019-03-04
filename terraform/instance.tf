@@ -5,7 +5,7 @@ resource "aws_instance" "inst" {
    associate_public_ip_address =true 
    count="${length(var.pub-sub)}"
    subnet_id="${element(aws_subnet.public-subnet.*.id,count.index)}"
-   
+   security_groups = ["${aws_security_group.sec-grp.id}"]
 tags{
      Name="pub-ser-${count.index+1}"
     } 
