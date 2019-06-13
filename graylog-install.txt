@@ -49,7 +49,8 @@ pJqhNbdEY9FtNBfFUtq20lG2m9daacmsZQr59FhyoA0Wu3XQyVZcu5FedPZ9eCiDfjdiYWfRcEQ7a36b
 05a181f00c157f70413d33701778a6ee7d2747ac18b9c0fbb8bd71a62dd7a223  -
 9.sudo vi /etc/graylog/server/server.conf
     Uncomment and modify the values following lines
-
+   password_secret = pJqhNbdEY9FtNBfFUtq20lG2m9daacmsZQr59FhyoA0Wu3XQyVZcu5FedPZ9eCiDfjdiYWfRcEQ7a36bVqxSyTzcMMx5Rz8v (above generated pwgen password)
+   root_password_sha2 = 05a181f00c157f70413d33701778a6ee7d2747ac18b9c0fbb8bd71a62dd7a223  - (above generated sha256sum password)
    rest_listen_uri = http://0.0.0.0:12900
    rest_transport_uri = http://public-amazon-ip:12900
    web_listen_uri = http://0.0.0.0:9000
